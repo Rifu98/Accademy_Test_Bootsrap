@@ -1,0 +1,99 @@
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .container img.rounded-circle {
+    object-fit: cover;
+  }
+
+  footer {
+    padding: 20px;
+    background-color: #f8f9fa;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .immagine, #carouselSection {
+    max-height: 90vh;;
+  }
+  .immagine {
+    object-fit: cover;
+    object-position: center;
+  }
+  #navbarSupportedContent {
+    justify-content: end;
+  }
+  #cercaCampo {
+    display: none;
+  }
+  #cercaIcona, #tornaSu {
+    cursor: pointer;
+  }
+
+  .card {
+    border:none;
+  }
+
+  .immagginette {
+    max-height: 20vh;
+    object-fit: cover;
+  }
+
+  .loghi {
+    max-height: 20vh;
+    object-fit: contain;
+  }
+
+  .eventi {
+    min-height: 50vh;;
+  }
+  button:hover {
+    transform: scale(1.2);
+  }
+  button {
+    transition: transform 0.3s ease;
+  }
+.active {
+    font-weight: bold;
+}
+#ott:hover, #nov:hover, #dic:hover {
+    cursor: pointer;
+    background-color: #2f2f2f !important;
+    color: white !important;
+    transform: scale(1.2);
+}
+#ott, #nov, #dic {
+    transition: transform 0.3s ease;
+}
+
+#ottobre, #novembre, #dicembre {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+#ottobre.show, #novembre.show, #dicembre.show {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    display: block;
+}

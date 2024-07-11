@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I Teatri di Palermo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-success text-white pe-3">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">I Teatri di Palermo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+            <ul class="navbar-nav text-white  me-3">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#spettacoli">Spettacoli</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contattaci">Contattaci</a>
+              </li>
+              <li class="nav-item dropdown text-white">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id = "menuSecondario">
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="storia.html">Palermo - Storia</a></li>
+                  <li><a class="dropdown-item" href="cultura.html">Palermo - Cultura</a></li>
+                  <li><a class="dropdown-item" href="paesaggi.html">Palermo - Paesaggi</a></li>
+                </ul>
+              </li>
+            </ul>
+            <span id="cercaCampo">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </span>
+            <span id="cercaIcona">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                </span>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Carosello -->
+    <section id="carouselSection" class=".container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Teatro1.jpg" class="d-block w-100 immagine" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Teatro Massimo</h5>
+                  <p>Situato in Piazza Giuseppe Verdi</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Teatro2.jpg" class="d-block w-100 immagine" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Teatro Massimo</h5>
+                  <p>Il Teatro Massimo Vittorio Emanuele, meglio noto come Teatro Massimo, di Palermo è il più grande edificio teatrale lirico d'Italia</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Teatro3.jpg" class="d-block w-100 immagine" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Teatro Politeama</h5>
+                  <p>Situato in Piazza Ruggero Settimo</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Teatro4.jpg" class="d-block w-100 immagine" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Teatro Politeama</h5>
+                  <p>«L'arte rinnova i popoli e ne rivela la vita. Vano delle scene il diletto ove non miri a preparar l'avvenire»</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <!-- Sezione con 3 colonne -->
+    <section class="container mt-5 text-center" id="about">
+      <h2>Cosa potrai vedere</h2>
+      <p>Benvenuti al nostro teatro, dove la magia della musica prende vita attraverso concerti, musical e operette indimenticabili. Con una programmazione variegata che spazia dalla vibrante energia dei musical alla sofisticata bellezza delle operette, offriamo esperienze teatrali uniche che incantano e emozionano il pubblico di tutte le età. Ogni spettacolo è curato con passione e impegno per portare sul palcoscenico storie coinvolgenti, eseguite da talentuosi artisti e accompagnate da una scenografia sorprendente e una musica che risuona nel cuore. Unisciti a noi per un viaggio attraverso le emozioni della musica e del teatro, qui al cuore della nostra comunità teatrale.</p>
+      <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Concerti</h5>
+                </div>
+                <img src="violinista.jpg" class="card-img-top rounded-pill mt-5 immagginette" alt="...">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Operette</h5>
+                </div>
+                <img src="opera.jpg" class="card-img-top rounded-pill mt-5 immagginette" alt="...">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Musicals</h5>
+                </div>
+                <img src="musical.jpg" class="card-img-top rounded-pill mt-5 immagginette" alt="...">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventi -->
+    <section class="container-fluid mt-5 bg-dark text-center text-white pt-5 pb-5" id="spettacoli">
+        <h2>Spettacoli Organizzati</h2>
+        <p class="mt-5 fst-italic fw-lighter">Vieni a goderti un'esperienza unica</p>
+        <p class="fst-italic fw-lighter">Spettacoli di ogni tipo per tutti i gusti</p>
+        <div class="container bg-white text-start border text-black " id="ott"><span class="fw-bold"> Ottobre</span><span class="badge text-bg-danger ms-1">SOLD OUT</span></div>
+        <div class="container bg-white text-start border text-black " id="nov"><span class="fw-bold"> Novembre</span><span class="badge text-bg-danger ms-1">SOLD OUT</span></div>
+        <div class="container d-flex justify-content-between bg-white text-start border text-black " id="dic"><span class="fw-bold"> Dicembre</span><span class="badge text-bg-secondary rounded-circle">2</span></div>
+        <div class="container mt-3" id="dicembre">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3 eventi">
+                      <div class="card-body">
+                        <img src="logo1.png" class="card-img-top mt-5 loghi" alt="...">
+                        <h2 class="card-title mt-3">RHCP</h2>
+                        <p class="card-text">I Red Hot in concerto al Teatro Massimmo</p>
+                        <button class="btn btn-secondary" disabled>Prenota</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3 eventi">
+                      <div class="card-body">
+                        <img src="logo2.jpg" class="card-img-top mt-5 loghi" alt="...">
+                        <h2 class="card-title mt-3">EVANESCENCE</h2>
+                        <p class="card-text">Gli Evanescence in concerto al Teatro Massimmo</p>
+                        <button class="btn bg-success text-white">Prenota</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3 eventi">
+                      <div class="card-body">
+                        <img src="logo3.jpg" class="card-img-top mt-5 loghi" alt="...">
+                        <h2 class="card-title mt-3">LAGUNA COIL</h2>
+                        <p class="card-text">I Laguna Coil in concerto al Teatro Politeama</p>
+                        <button class="btn bg-success text-white">Prenota</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3" id="novembre" >
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3 eventi">
+                      <div class="card-body">
+                        <img src="logo4.png" class="card-img-top mt-5 loghi" alt="...">
+                        <h2 class="card-title mt-3">LINKIN PARK</h2>
+                        <p class="card-text">I Linkin Park in concerto al Teatro Massimmo</p>
+                        <button class="btn btn-secondary" disabled>Prenota</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3 eventi">
+                      <div class="card-body">
+                        <img src="logo5.jpg" class="card-img-top mt-5 loghi" alt="...">
+                        <h2 class="card-title mt-3">ACDC</h2>
+                        <p class="card-text">Gli ACDC in concerto al Teatro Massimmo</p>
+                        <button class="btn btn-secondary" disabled>Prenota</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3 eventi">
+                      <div class="card-body">
+                        <img src="logo6.jpg" class="card-img-top mt-5 loghi" alt="...">
+                        <h2 class="card-title mt-3">SOAD</h2>
+                        <p class="card-text">I System of a Down in concerto al Teatro Politeama</p>
+                        <button class="btn btn-secondary" disabled>Prenota</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3" id="ottobre" >
+            <div class="row">
+                <div class="col-md-6 col-xl-3">
+                    <div class="card mb-3 eventi">
+                      <div class="card-body">
+                        <img src="logo7.png" class="card-img-top mt-5 loghi" alt="...">
+                        <h2 class="card-title mt-3">GORILLAZ</h2>
+                        <p class="card-text">I Gorillaz in concerto al Teatro Massimmo</p>
+                        <button class="btn btn-secondary" disabled>Prenota</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card mb-3 eventi">
+                      <div class="card-body">
+                        <img src="logo8.jpg" class="card-img-top mt-5 loghi" alt="...">
+                        <h2 class="card-title mt-3">FLYLEAF</h2>
+                        <p class="card-text">I Flyleaf in concerto al Teatro Massimmo</p>
+                        <button class="btn btn-secondary" disabled>Prenota</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card mb-3 eventi" data-month="gennaio">
+                      <div class="card-body">
+                        <img src="logo9.jpg" class="card-img-top mt-5 loghi" alt="...">
+                        <h2 class="card-title mt-3">THE CRANBERRIES</h2>
+                        <p class="card-text">I The Cranberries in concerto al Teatro Politeama</p>
+                        <button class="btn btn-secondary" disabled>Prenota</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card mb-3 eventi" data-month="gennaio">
+                      <div class="card-body">
+                        <img src="logoextra.webp" class="card-img-top mt-5 loghi" alt="...">
+                        <h2 class="card-title mt-3">MANESKIN</h2>
+                        <p class="card-text">I Måneskin in concerto al Teatro Politeama</p>
+                        <button class="btn btn-secondary" disabled>Prenota</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+  
+
+    <!-- Sezione Contatti e Blog -->
+    <section class="container mt-5 text-center pb-5 mb-3" id = "contattaci">
+      <h2>Contattaci</h2>
+      <p class = "fst-italic mt-5 fw-lighter">Il tuo parere conta</p>
+      <div class="row">
+        <div class="col-md-4 text-start">
+          <p>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+                    <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                </svg>
+            </span>
+            Via Esempio 0, Palermo (PA)
+          </p>
+          <p>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+              </svg>
+            </span>
+            +39 3279874194
+          </p>
+          <p>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+            </span>
+            federicorifugiato52@gmail.com
+          </p>
+        </div>
+        <div class="col-md-8 text-end">
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-6 text-start">
+                <input type="text" class="form-control" id="name" placeholder="Nome">
+              </div>
+              <div class="col-md-6 text-start">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" placeholder="Commento..."></textarea>
+            </div>
+            <button type="submit" class="btn bg-success text-white">Invia</button>
+          </form>
+        </div>
+      </div>
+      <div class="mt-5">
+        <h2>From the Blog</h2>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#blog1">Guido Lavespa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#blog2">Remo Labarca</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#blog3">Omar Osol</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="blog1" class="container tab-pane active text-start">
+            <h4>Guido Lavespa</h4>
+            <p class="fst-italic fw-lighter">Autore</p>
+            <p>Non ho molta fantisia per ora</p>
+          </div>
+          <div id="blog2" class="container tab-pane fade text-start">
+            <h4>Remo Labarca</h4>
+            <p class="fst-italic fw-lighter">Produttore</p>
+            <p>Like</p>
+          </div>
+          <div id="blog3" class="container tab-pane fade text-start">
+            <h4>Omar Osol</h4>
+            <p class="fst-italic fw-lighter">Critico esterno</p>
+            <p>Bella Palermo, quasi quanto Napoli</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5 bg-success text-white text-center">
+        <div id="noHover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+          </svg>
+        </div>
+        <div id="siHover" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-square-fill" viewBox="0 0 16 16"  id="tornaSu">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11"/>
+            </svg>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
